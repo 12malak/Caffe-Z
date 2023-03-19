@@ -1,21 +1,30 @@
-let customer = prompt("Please tell us  your name");
-let gender=prompt("please enter your gender","male or female")
+let person = prompt("Please tell us  your name") 
+let g = prompt("please enter your gender","male or female")
 
-let genderLower = gender.toLowerCase();
+while(g !="male" &&  g !="female"){
 
-if (genderLower == "male") {
-    alert("Welcome to Coffe time shop Mr"+" "+customer);
+g = prompt("Please enter a correct gender")
+
 }
-else if(genderLower == "female"){
-    alert("Welcome to Coffe time shop MS"+" "+customer);
+if(g == "male" ){
+    alert("Welcome to Coffe time shop Mr. "+person )
+
+}
+else if(g == "female" ){
+alert("Welcome Ms. "+ person)
 }
 else{
-    alert("Welcome to Coffe time Coffe lover" );
+    alert("Welcome to Coffe time Coffe lover ")
 }
 
-let drink=prompt('Do you prefare a hot or cold coffe? ')
-let drinkName=prompt('nice choice,what is your drink name? ')
+let drink = prompt("What drink do you want ?", "Hot or Cold ?")
 
-alert('Please wait,your drink is being prepared.....')
+let namedrink = prompt("Name of your drink ?")
+alert("Your drink is being prepared .")
+console.log("Name : "+person +"  Drink name : "+namedrink)
 
-console.log(customer+ " will have " + drinkName)
+let arr=[person,g,drink,namedrink];
+for(let i=0;i<arr.length;i++){
+console.log(arr[i])
+
+}
