@@ -1,21 +1,25 @@
 let person = prompt("Please tell us  your name") 
-let g = prompt("please enter your gender","male or female")
-
-while(g !="male" &&  g !="female"){
-
-g = prompt("Please enter a correct gender")
-
+function gender() {
+    
+    let g = prompt("please enter your gender","male or female")
+    
+    while(g !="male" &&  g !="female"){
+    
+    g = prompt("Please enter a correct gender")
+    
+    }
+    if(g == "male" ){
+        alert("Welcome to Coffe time shop Mr. "+person )
+    
+    }
+    else if(g == "female" ){
+    alert("Welcome Ms. "+ person)
+    }
+    else{
+        alert("Welcome to Coffe time Coffe lover ")
+    }
 }
-if(g == "male" ){
-    alert("Welcome to Coffe time shop Mr. "+person )
-
-}
-else if(g == "female" ){
-alert("Welcome Ms. "+ person)
-}
-else{
-    alert("Welcome to Coffe time Coffe lover ")
-}
+gender();
 
 let drink = prompt("What drink do you want ?", "Hot or Cold ?")
 
