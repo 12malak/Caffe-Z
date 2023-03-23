@@ -8,10 +8,14 @@ formSub.addEventListener("submit",(event)=>{
     let hot=(event.target.userdrinkType.checked );
     let cold=(event.target.userdrinkType1.checked );
 let drinkType00;
-    if(cold){
+if (cold == true && hot == true){  
+    drinkType00="Hot & Cold"
 
-drinkType00="Cold"
-    }else if(hot){
+}
+else if(cold ==true){
+
+drinkType00="Cold" } 
+else if(hot ==true){
         drinkType00="Hot"
     }
   render(username,drink,Age,drinkType00);
