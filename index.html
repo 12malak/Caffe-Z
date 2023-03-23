@@ -31,6 +31,50 @@
     <div class="container">
         <div class="intro">
             <img class="intro-img img-fluid mb-3 " style="height: 30rem;width:80rem;" src="imags/intro.jpg" alt="..." />
+            <div class="top-left">
+              <div class="fo">
+                <form method="post" id="myForm" onsubmit="return false">
+                    <div>
+                      <label for="text"> user name :</label>
+                      <input id="text" type="text" placeholder="user" name="username" />
+                    </div>
+            
+                    <div>
+                        <label for="text"> drink type:</label>
+                        <input id="text" type="text" placeholder="drink" name="drink" />
+                    </div>
+            <div>
+               
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" name="Age" min="18" max="50">
+    
+            </div>
+    
+            <div class="d-flex ms-1">
+              <h6 style="margin-left: 20px;"> drinkType :</h6>
+              
+              <div>
+               
+             <label class="ms-4" for="#Hot"> Hot </label>
+             <input  id="Hot" type="checkbox" value="Hot" name="userdrinkType" >
+              </div>
+
+              <div>
+               
+                <label class="ms-2" for="#Cold"> Cold </label>
+                <input id="Cold" type="checkbox" value="Cold" name="userdrinkType1" >
+                 </div>
+            </div>
+                    <input  id="inputSignIn" type="submit" value="Order" />
+                  </form>
+    
+                  <div id="userInput">
+    
+    
+                  </div>
+                  </div>
+
+            </div>
             <div class="intro-text text-center bg-faded p-5 rounded"  style="height: 20rem;width:30rem;margin-left: 25rem;">
                 
                     <h4 class="section-heading-upper">Fresh Coffee</h4>
@@ -42,7 +86,7 @@
         </div>
     </div>
 </section>
-<div id="userInput" style="color: antiquewhite;font-size: 20px;">
+<div id="userInput" style="color: antiquewhite;font-size: 20px;border: 3 solid rosybrown;">
 
 
 
